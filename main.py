@@ -3,7 +3,7 @@ import numpy as np
 
 clearConsole = lambda: os.system('cls' if os.name in ('nt', 'dos') else 'clear')
 clearConsole()
-
+wygrana = False
 lista = ["A1","A2","A3","B1","B2","B3","C1","C2","C3"]
 def pokaz():
   clearConsole()
@@ -13,11 +13,22 @@ def pokaz():
   print("—— | —— | ——")
   print(lista[6]+" | "+lista[7]+" | "+lista[8])
   
-while 1 == 1:
+def wygrana(X, Y):
+  if str(X[0]) == str(X[1]) == str(X[2]):
+    Y = True
+    print("wygrana")  
+while wygrana != True:
   pokaz()
   print("")
   nrPola = input("Podaj Nr Pola: ")
-  lista.index(nrPola) = "X"
-lista = np.array(my_lista)
-lista = np.where(my_lista == 'nrPola, 'Green', my_list)
-print(my_list)
+  lista = np.array(lista)
+  lista = np.where(lista == nrPola, 'O ', lista)
+  pokaz()
+  print("")
+  nrPola = input("Podaj Nr Pola: ")
+  lista = np.array(lista)
+  lista = np.where(lista == nrPola, 'X ', lista)
+  wygrana(lista, wygrana)
+
+
+

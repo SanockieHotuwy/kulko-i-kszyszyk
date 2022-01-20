@@ -9,12 +9,11 @@ lista = ["A1","A2","A3","B1","B2","B3","C1","C2","C3"]
 lista2 = ["  ","  ","  ","  ","  ","  ","  ","  ","  ",]
 def pokaz():
   clearConsole()
-  print("    1    2    3")
-  print(" ")
+  print("1    2    3")
   print("A   "+lista2[0]+" | "+lista2[1]+" | "+lista2[2])
-  print("    —— | —— | ——")
+  print("—— | —— | ——")
   print("B   "+lista2[3]+" | "+lista2[4]+" | "+lista2[5])
-  print("    —— | —— | ——")
+  print("—— | —— | ——")
   print("C   "+lista2[6]+" | "+lista2[7]+" | "+lista2[8])
   
 
